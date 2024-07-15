@@ -1,2 +1,2 @@
 # Frontend-mentor
- exercícios de frontend 
+ exercícios de frontend do site frontendmentor. 
