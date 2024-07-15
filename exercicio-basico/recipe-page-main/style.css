@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: hsl(330, 100%, 98%)
+}
+main {
+    background-color: white;
+    border-radius: 20px;
+    margin: 40px;
+    padding: 30px;
+}
+#cabecalho {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+
+.tabela {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    /* border-style: groove; */
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
