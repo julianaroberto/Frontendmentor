@@ -1,14 +1,28 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* outfit 400, 600, 900 */
 
 body{
-    background-color: hsl(330, 100%, 98%)
+    background-color: hsl(330, 100%, 98%);
+    
 }
+
+main {
+    font-family: "Outfit", arial;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(30, 10%, 34%);
+}
+
 main {
     background-color: white;
     border-radius: 20px;
-    margin: 40px;
-    padding: 30px;
+    margin: 20px 40px;
+    padding: 20px 20px;
 }
 #cabecalho {
     width: 100%;
@@ -16,25 +30,73 @@ main {
     border-radius: 15px;
 }
 
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:  hsl(24, 5%, 18%);
+}
+
 h2 {
     color: hsl(14, 45%, 36%);
-    font-weight: bold;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3 {
     color: hsl(332, 51%, 32%);
+    font-family: "Outfit", arial;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lista1 {
+    color:  hsl(24, 5%, 18%);
+}
+
+hr {
+    color: hsl(30, 18%, 87%);
+}
+.conteudo {
+    background-color: hsl(30, 54%, 90%);
+    border-radius: 10px;
+    padding: 5px 5px;
+    text-indent: 17px;
+    font-family: "Outfit", arial;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 40px;
+}
+
+table td{
+    border: 1px solid hsl(30, 18%, 87%);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align: left;
+    color:hsl(14, 45%, 36%);
     font-weight: bold;
 }
 
-
-.tabela {
-    border-collapse: collapse;
-    padding: 10px;
+table th{
+    text-indent: 20px;
+    border: 1px solid hsl(30, 18%, 87%);
+    border-left: none;
+    border-right: none;
+    border-top: none;
     text-align: left;
-    /* border-style: groove; */
+    font-weight: normal;
+    
 }
 
-
+/* @media only screen and (min-width: 375px) and (max-width: 1440px) */
 
 
 .attribution { font-size: 11px; text-align: center; }
