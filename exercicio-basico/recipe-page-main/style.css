@@ -19,6 +19,7 @@
 
 *{
     font-size: 16px;
+    text-align: justify;
 }
 
 body{
@@ -75,7 +76,17 @@ h3 {
     color: var(--cor07);
 }
 
+.lista2 {
+    text-indent: 12px;
+    padding-left: 25px;
+   
+}
 
+.lista3 {
+    text-indent: 15px;
+    padding-left: 25px;
+
+}
 hr {
     color: var(--cor05);
 }
