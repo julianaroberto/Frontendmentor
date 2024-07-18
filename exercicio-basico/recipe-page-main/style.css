@@ -14,7 +14,7 @@
     --cor04: hsl(30, 54%, 90%);
     --cor05: hsl(30, 18%, 87%);
     --cor06: hsl(30, 10%, 34%);
-    --cor04: hsl(24, 5%, 18%); 
+    --cor07: hsl(24, 5%, 18%); 
 }
 
 *{
@@ -22,19 +22,15 @@
 }
 
 body{
-    background-color: var(--cor02);
+    background-color: var(--cor04);
 }
 
 main {
-    background-color: white;
+    background-color: var(--cor02);
     border-radius: 20px;
     width: 600px;
-    padding: 20px;
+    padding: 30px;
     margin: auto;
-}
-
-img {
-    width: 100%;
 }
 
 main {
@@ -46,8 +42,7 @@ main {
 
 #cabecalho {
     width: 100%;
-    height: 250px;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 h1 {
@@ -59,10 +54,12 @@ h1 {
 }
 
 h2 {
-    color: hsl(14, 45%, 36%);
+    color: var(--cor00);
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.5em;
+
 }
 
 h3 {
@@ -75,14 +72,15 @@ h3 {
 }
 
 .lista1 {
-    color:  hsl(24, 5%, 18%);
+    color: var(--cor07);
 }
 
+
 hr {
-    color: hsl(30, 18%, 87%);
+    color: var(--cor05);
 }
 .conteudo {
-    background-color: hsl(342, 53%, 90%);
+    background-color: var(--cor03);
     border-radius: 10px;
     padding: 5px 5px;
     text-indent: 17px;
@@ -99,18 +97,18 @@ table {
 }
 
 table td{
-    border: 1px solid hsl(30, 18%, 87%);
+    border: 1px solid var(--cor05);
     border-left: none;
     border-right: none;
     border-top: none;
     text-align: left;
-    color:hsl(14, 45%, 36%);
+    color:var(--cor00);
     font-weight: bold;
 }
 
 table th{
     text-indent: 20px;
-    border: 1px solid hsl(30, 18%, 87%);
+    border: 1px solid var(--cor05);
     border-left: none;
     border-right: none;
     border-top: none;
