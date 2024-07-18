@@ -6,17 +6,23 @@
 
 /* outfit 400, 600, 900 */
 
+:root {
+    --cor00: hsl(14, 45%, 36%);
+    --cor01: hsl(332, 51%, 32%);
+    --cor02: hsl(0, 0%, 100%);
+    --cor03: hsl(330, 100%, 98%);
+    --cor04: hsl(30, 54%, 90%);
+    --cor05: hsl(30, 18%, 87%);
+    --cor06: hsl(30, 10%, 34%);
+    --cor04: hsl(24, 5%, 18%); 
+}
+
 *{
     font-size: 16px;
 }
 
 body{
-    background-color: hsl(330, 100%, 98%);
-}
-
-body {
-    min-width: 375px;
-    max-width: 1440px;
+    background-color: var(--cor02);
 }
 
 main {
@@ -112,6 +118,12 @@ table th{
     font-weight: normal;
     
 }
+
+/* @media screen (max-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+} */
 
 /* @media only screen and (min-width: 375px) and (max-width: 1440px) */
 
