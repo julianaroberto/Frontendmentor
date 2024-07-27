@@ -23,6 +23,8 @@
 
 body{
     background-color: var(--cor04);
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 main {
@@ -32,8 +34,6 @@ main {
     width: 100%;
     padding: 40px;
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
 }
 
 main {
