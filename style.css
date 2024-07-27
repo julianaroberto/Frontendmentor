@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* outfit 400, 600, 900 */
+
+:root {
+    --cor00: hsl(14, 45%, 36%);
+    --cor01: hsl(332, 51%, 32%);
+    --cor02: hsl(0, 0%, 100%);
+    --cor03: hsl(330, 100%, 98%);
+    --cor04: hsl(30, 54%, 90%);
+    --cor05: hsl(30, 18%, 87%);
+    --cor06: hsl(30, 10%, 34%);
+    --cor07: hsl(24, 5%, 18%); 
+}
+
+*{
+    font-size: 16px;
+
+}
+
+body{
+    background-color: var(--cor04);
+}
+
+main {
+    background-color: var(--cor02);
+    border-radius: 24px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+main {
+    font-family: "Outfit", arial;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor06);
+}
+
+#imagem {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: "Young Serif", arial, serif;
+    font-weight: 400;
+    font-style: normal;
+    color:  var(--cor07)
+}
+
+h2 {
+    color: var(--cor00);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+}
+
+h3 {
+    font-size: 1.2em;
+    color: var(--cor01);
+    font-family: "Outfit", arial;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+/* listas */
+
+.lista1 {
+    color: var(--cor07);
+}
+
+.lista2 {
+    text-indent: 12px;
+    padding-left: 25px;
+   
+}
+
+.lista3 {
+    text-indent: 15px;
+    padding-left: 25px;
+    border-bottom: 1px;
+}
+
+/* marcadores da lista */
+li::marker {
+    color: var(--cor01);
+    font-weight: 700;
+}
+
+hr {
+    color: var(--cor05);
+}
+
+.prep-cont {
+    background-color: var(--cor03);
+    border-radius: 24px;
+    padding: 10px 0 10px 10px;
+    text-indent: 20px;
+    font-family: "Outfit", arial;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+/* tabelas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 40px;
+}
+
+table td{
+    border-bottom: 1px solid var(--cor05);
+    text-align: left;
+    color:var(--cor00);
+    font-weight: bold;
+}
+
+table th{
+    text-indent: 20px;
+    border-bottom: 1px solid var(--cor05);
+    text-align: left;
+    font-weight: normal; 
+}
+
+/* responsividade */
+@media (max-width: 700px){
+      #tudo{
+        min-width: 360px;
+        padding: 0 0 20px 0;
+        margin: 0 auto;
+        }
+
+        .prep-cont, p, h1, h2, .lista2, .lista3 {
+            margin: 25px;
+        } 
+
+        #imagem {
+            margin-top: 0;
+        }
+    }
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
