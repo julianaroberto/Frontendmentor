@@ -19,7 +19,7 @@
 
 *{
     font-size: 16px;
-    /* text-align: justify; */
+
 }
 
 body{
@@ -28,20 +28,22 @@ body{
 
 main {
     background-color: var(--cor02);
-    border-radius: 20px;
-    width: 500px;
-    padding: 30px;
-    margin: auto;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
 }
 
 main {
     font-family: "Outfit", arial;
     font-weight: 400;
     font-style: normal;
-    color: hsl(30, 10%, 34%);
+    color: var(--cor06);
 }
 
-#cabecalho {
+#imagem {
+    display: block;
     width: 100%;
     border-radius: 12px;
 }
@@ -51,7 +53,7 @@ h1 {
     font-family: "Young Serif", arial, serif;
     font-weight: 400;
     font-style: normal;
-    color:  hsl(24, 5%, 18%);
+    color:  var(--cor07)
 }
 
 h2 {
@@ -65,12 +67,14 @@ h2 {
 
 h3 {
     font-size: 1.2em;
-    color: hsl(332, 51%, 32%);
+    color: var(--cor01);
     font-family: "Outfit", arial;
     font-weight: 600;
     font-style: normal;
     
 }
+
+/* listas */
 
 .lista1 {
     color: var(--cor07);
@@ -85,21 +89,30 @@ h3 {
 .lista3 {
     text-indent: 15px;
     padding-left: 25px;
-
+    border-bottom: 1px;
 }
+
+/* marcadores da lista */
+li::marker {
+    color: var(--cor01);
+    font-weight: 700;
+}
+
 hr {
     color: var(--cor05);
 }
-.conteudo {
+
+.prep-cont {
     background-color: var(--cor03);
-    border-radius: 10px;
-    padding: 5px 5px;
+    border-radius: 24px;
+    padding: 10px 0 10px 10px;
     text-indent: 20px;
     font-family: "Outfit", arial;
     font-weight: 400;
     font-style: normal;  
 }
 
+/* tabelas */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -107,10 +120,7 @@ table {
 }
 
 table td{
-    border: 1px solid var(--cor05);
-    border-left: none;
-    border-right: none;
-    border-top: none;
+    border-bottom: 1px solid var(--cor05);
     text-align: left;
     color:var(--cor00);
     font-weight: bold;
@@ -118,35 +128,27 @@ table td{
 
 table th{
     text-indent: 20px;
-    border: 1px solid var(--cor05);
-    border-left: none;
-    border-right: none;
-    border-top: none;
+    border-bottom: 1px solid var(--cor05);
     text-align: left;
-    font-weight: normal;
-    
+    font-weight: normal; 
 }
 
-/* @media screen (max-width: 1440px) {
-    html {
-        font-size: 16px;
+/* responsividade */
+@media (max-width: 800px){
+      #tudo{
+        min-width: 360px;
+        padding: 0 0 20px 0;
+        margin: 0 auto;
+        }
+
+        .prep-cont, p, h1, h2, .lista2, .lista3 {
+            margin: 25px;
+        } 
+
+        #imagem {
+            margin-top: 0;
+        }
     }
-} */
-
-/* tela de celular 360x800 */
-/* @media only screen and (max-width: 900px) {
-    #tudo, .conteudo {
-        width: 270px;
-    }
-} */
-
-
-@media only screen and (max-width: 600px) and (max-width: 1440px) {
-    #tudo, .conteudo {
-        width: 280px;
-    }
-}
-
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
