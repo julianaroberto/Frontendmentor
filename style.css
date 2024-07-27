@@ -19,7 +19,6 @@
 
 *{
     font-size: 16px;
-
 }
 
 body{
@@ -29,10 +28,12 @@ body{
 main {
     background-color: var(--cor02);
     border-radius: 24px;
-    max-width: 500px;
+    max-width: 736px;
     width: 100%;
-    margin: 0 auto;
     padding: 40px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 main {
@@ -83,6 +84,8 @@ h3 {
 .lista2 {
     text-indent: 12px;
     padding-left: 25px;
+    border-bottom: 1px solid var(--cor05);
+    padding-bottom: 25px;
    
 }
 
@@ -90,6 +93,8 @@ h3 {
     text-indent: 15px;
     padding-left: 25px;
     border-bottom: 1px;
+    border-bottom: 1px solid var(--cor05);
+    padding-bottom: 25px;
 }
 
 /* marcadores da lista */
@@ -119,8 +124,12 @@ table {
     line-height: 40px;
 }
 
-table td{
+table td, th {
     border-bottom: 1px solid var(--cor05);
+    text-align: left;
+}
+
+table td{
     text-align: left;
     color:var(--cor00);
     font-weight: bold;
@@ -128,7 +137,6 @@ table td{
 
 table th{
     text-indent: 20px;
-    border-bottom: 1px solid var(--cor05);
     text-align: left;
     font-weight: normal; 
 }
