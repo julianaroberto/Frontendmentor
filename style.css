@@ -58,7 +58,7 @@ h1 {
     color:  var(--cor07)
 }
 
-h2 {
+.menor {
     color: var(--cor00);
     font-family: "Young Serif", serif;
     font-weight: 400;
@@ -67,13 +67,12 @@ h2 {
 
 }
 
-h3 {
+h2 {
     font-size: 1.2em;
     color: var(--cor01);
     font-family: "Outfit", arial;
     font-weight: 600;
     font-style: normal;
-    
 }
 
 /* listas */
